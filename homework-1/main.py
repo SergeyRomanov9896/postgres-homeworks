@@ -5,7 +5,7 @@ import csv
 import psycopg2
 
 
-def fill_table_from_csv(table_name: str, file_name: str):
+def fill_table_from_csv(table_name: str, file_name: str) -> None:
     conn = psycopg2.connect(
         host="localhost",
         user="postgres",
@@ -44,7 +44,7 @@ def fill_table_from_csv(table_name: str, file_name: str):
         conn.close()
 
 
-def main():
+def main() -> None:
     fill_table_from_csv(
         "customers",
         "homework-1/north_data/customers_data.csv",
