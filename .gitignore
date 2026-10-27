@@ -163,4 +163,4 @@ cython_debug/
 .idea/
 data/
 tempCodeRunnerFile.py
-.vscode/settings.json
+.vscode/
